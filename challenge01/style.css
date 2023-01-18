@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* inicio resetando todas as configuracoes padroes do navegador */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* final resetando todas as configuracoes padroes do navegador */
+
+body
+{
+    background: #222222;
+}
+
+/* inicio posicionamento da caixa principal e configuracoes do titulo */
+.container 
+{
+    text-align: center;
+    margin-bottom: 4.125rem;
+}
+
+.container h1 , .container h2
+{
+    font-size: 4.5rem; /* 72px convertido para rem é 4,5 rem*/
+    line-height: 4.5rem;
+    letter-spacing: -0.4px;
+    color: #FFE8D9;
+    
+}
+
+.container h1
+{
+    margin-top: 6.56rem; /* 105px = 6.56rem */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.container h2
+{
+    font-family: 'Ubuntu Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* final posicionamento da caixa principal e configuracoes do titulo */
+
+/* inicio configuracao da caixa com o numero das bordas */
+
+.caixa-numero-border
+{
+  border: none;
+  border-radius: 6px;
+   padding: 14px 63px 13px 15px;
+  background-color: #626262;
+  margin-bottom: 28px;
+}
+.caixa-numero-border span
+{
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+}
+/* final configuracao da caixa com o numero das bordas */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 105px auto 0 auto;
+    padding-bottom: 23px;
+  }
+  
+  .main-container label {
+    font-family: 'Open sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #f7f7f7;
+  }
+  
+  .top-inputs,
+  .bottom-inputs {
+    display: flex;
+    width: 100%;
+    max-width: 286px;
+    gap: 86px;
+  }
+  
+  .top-inputs input,
+  .bottom-inputs input {
+    margin-top: 4px;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    height: 35px;
+    width: 85px;
+    border: none;
+    box-shadow: 0 0 2px transparent;
+    outline: none;
+    padding: 5px 0 5px 12px;
+    font-size: 14px;
+    caret-color: #ff9466;
+  }
+  
+  .top-inputs input:focus,
+  .bottom-inputs input:focus {
+    box-shadow: 0 0 0 2px #ff9466;
+  
+  } 
+  
+  .preview-container {
+    width: 100%;
+    max-width: 286px;
+  }
+  
+  .box {
+    background-color: #ff9466;
+    width: 286px;
+    height: 286px;
+    margin: 12px 0 12px 0;
+  }
+  
+  @media (max-width: 510px) {
+    html {
+      font-size: 66.67%;
+    }
+  }
