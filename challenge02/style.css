@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: black;
+}
+
+.conatiner{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   margin-left: -5px;
+   
+  }
+  /* japao */
+  .circuloj {
+    box-sizing: border-box;
+    position: absolute;
+    width: 186px;
+    height: 186px;
+    left: 100px;
+    top: 25px;
+    background: #ff0000;
+    border: 1px solid #dddddd;
+    border-radius: 1.1e6px;
+   
+    
+  }
+  .retanguloj {
+    box-sizing: border-box;
+    position: relative;
+     width: 400px;
+    height: 255.55px;
+     left: 50px;
+    top: 50px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    
+   
+  }
+  
+  /* brasil */
+  
+  .retangulob {
+    box-sizing: border-box;
+    position: absolute;
+    width: 25rem;
+    height: 255px;
+    left: 50px;
+    top: 321.55px;
+    background: #008000;
+    border: 1px solid #dddddd;
+  }
+  
+  .retangulob .losangulob:before,
+  .retangulob .losangulob:after {
+    position: absolute;
+  }
+  
+  .retangulob .losangulob {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .retangulob .losangulob:before,
+  .retangulob .losangulob:after {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 100px;
+    right: 20px;
+  }
+  
+  .retangulob .losangulob:before {
+    /*   border-left: 105px solid transparent; */
+    border-left: 135px solid transparent;
+    /*   border-right: 105px solid transparent; */
+    border-right: 135px solid transparent;
+    /*   border-bottom: 65px solid #ffe11f; */
+    border-bottom: 100px solid #ffe11f;
+    top: 20px;
+    left: 70px;
+    
+  }
+  
+  .retangulob .losangulob:after {
+     border-left: 135px solid transparent;
+    border-right: 135px solid transparent;
+    border-top: 100px solid #ffe11f;
+    bottom: 34px;
+    left: 70px;
+  }
+  
+  .circulob {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 155px;
+    top: 70px;
+    background: #0000ff;
+    border-radius: 1.1e6px;
+    z-index: 2;
+  }
+  
+  /* final brasil */
+  
+  /* chile */
+  .retanguloc1 {
+    box-sizing: border-box;
+    position: relative;
+    width: 400px;
+    height: 255.55px;
+    left: 50px;
+    top: 320px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+  }
+  .retanguloc2 {
+    box-sizing: border-box;
+    width: 400px;
+    height: 128px;
+    margin-top: 127px;
+    margin-left: -1px;
+    background: red;
+    
+  }
+  .quadradoc {
+    box-sizing: border-box;
+    position: relative;
+    width: 128px;
+    height: 128px;
+    left: 0px;
+    top: -128px;
+    background: blue;
+   
+  }
+  
+  .star-five {
+    --star-color: white;
+    margin: -213px 15px;
+    font-size: 3em;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(35deg);
+  }
+  .star-five:before {
+    border-bottom: 0.8em solid var(--star-color);
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -0.45em;
+    left: -0.65em;
+    display: block;
+    content: "";
+    transform: rotate(-35deg);
+  }
+  .star-five:after {
+    position: absolute;
+    display: block;
+     left: -1.05em;
+    width: 0;
+    height: 0;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(-70deg);
+    content: "";
+  }
+
+ 
